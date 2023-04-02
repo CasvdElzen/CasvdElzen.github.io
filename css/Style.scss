@@ -11,6 +11,7 @@
   html, body { 
     margin: 0;
     padding: 0;
+    width: 100vw;
     
     justify-content: center;
     align-items: center;
@@ -20,7 +21,7 @@
     contain: content;
     overflow: hidden;
     display: flex;
-    
+
   }
 
 
@@ -60,6 +61,23 @@
   0 3px 0 #222222, 0 4px 0 #ccc,
   0 5px 0 #222222, 0 6px 0 #ccc,
   0 7px 0 #222222, 0 8px 0 #ccc;    
+}
+
+.AboutMeText{
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  top: 5em;
+  
+  text-shadow: 
+  0 1px 0 #222222, 0 2px 0 #ccc,
+  0 3px 0 #696969, 0 4px 0 #ccc,
+  0 5px 0 #969696, 0 6px 0 #ccc,
+  0 7px 0 #cecece, 0 8px 0 #ccc;    
+
 }
 /*#endregion */
 
@@ -105,14 +123,18 @@ body {
 //*Button css
 /*#region Button*/
 .buttonn {
+  backdrop-filter: blur(20px) saturate(240%);
+  -webkit-backdrop-filter: blur(16px);
   margin-top: 250px;
   width: 200px;
   height: 50px;
   position: relative;
   border: solid rgba(255, 255, 255, 0.3) 1px;
   background: transparent;
-  cursor: pointer;
+  
+  animation-iteration-count:infinite;
   transition: all 1s;
+  
 }
 .buttonn span {
   position: absolute;
@@ -120,7 +142,7 @@ body {
   left: 60px;
   color: rgb(0, 0, 0);
   font-family: "Roboto", sans-serif;
-  opacity: 0.7;
+  
 }
 .buttonn .line {
   background: rgb(0, 0, 0);
@@ -189,6 +211,9 @@ body {
 //*The background effect
 /*#region BACKGROUND*/
 
+
+
+
 @function random_range($min, $max) {
   $rand: random();
   $random_range: $min + floor($rand * (($max - $min) + 1));
@@ -239,3 +264,8 @@ body {
 }
 
 /*#endregion*/
+
+
+
+
+
