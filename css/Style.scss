@@ -21,14 +21,9 @@
     contain: content;
     overflow: hidden;
     display: flex;
-
   }
 
 
-
-  
-
-  
 //*All text effects and text related css.
 /*#region Main Text*/
 
@@ -265,8 +260,8 @@ body {
 
 /*#endregion*/
 
-
-
+//*The footer styling
+/*#region Footer*/
 .txt{
   width: max-content;
   margin: 160px auto 64px;
@@ -437,3 +432,4 @@ a b{
     margin: 70px auto 64px;
   }
 }
+/*#endregion*/
