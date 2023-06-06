@@ -17,9 +17,9 @@
     align-items: center;
     min-height: 100vh;
 
-    overflow-x: clip; 
+    overflow: clip; 
     contain: content;
-    overflow-x: hidden;
+    overflow: hidden;
     display: flex;
   }
 
